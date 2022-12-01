@@ -19,5 +19,6 @@ export default createGlobalStyle`
   body {
     background: ${(props: ITheme) => props.theme.body};
     font-family: Poppins, sans-serif;
+    margin: 0 24px;
   }
 `

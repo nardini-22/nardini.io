@@ -1,6 +1,6 @@
+import { Header } from '@/components'
+
 const Home = () => {
-  return (
-    <div>Nardini.io</div>
-  )
+  return <Header />
 }
 export default Home

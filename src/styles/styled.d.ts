@@ -15,6 +15,8 @@ export interface ITheme {
     body: string
     text: string
     primary: string
-    highlight
+    highlight: string
+    header: string
+    headerShadow: string
   }
 }

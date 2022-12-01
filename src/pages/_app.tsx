@@ -2,7 +2,7 @@ import { AppProps } from 'next/app'
 import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import Theme from '@/components/context/Theme'
+import Theme from '@/context/Theme'
 import { darkTheme, lightTheme } from '@/styles/theme'
 import Head from 'next/head'
 import GlobalStyle from '../styles/global'
