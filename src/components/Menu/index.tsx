@@ -4,19 +4,29 @@ import * as S from './styles'
 export const Menu = () => {
   const array = [
     {
-      icon: <>teste</>,
-      label: 'Teste',
-      url: '/'
+      label: 'Sobre',
+      url: '/#'
+    },
+    {
+      label: 'Habilidades',
+      url: '/#'
+    },
+    {
+      label: 'Projetos',
+      url: '/#'
+    },
+    {
+      label: 'Contatos',
+      url: '/#'
     }
   ]
   return (
     <S.Container>
       {array.map(item => (
         <Link href={item.url}>
-          <>
-            {item.icon}
-            {item.label}
-          </>
+          <S.IconContainer>
+            <p>{item.label}</p>
+          </S.IconContainer>
         </Link>
       ))}
     </S.Container>

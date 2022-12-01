@@ -11,7 +11,7 @@ export const Header = () => {
     <S.Container>
       <S.Title>Nardini.io</S.Title>
       {/* <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        {theme}
+        {theme}wefgweuigfwegfweigfiwe
       </button> */}
       {screenType === 'desktop' && <Menu />}
     </S.Container>
