@@ -1,9 +1,10 @@
-import { Background, Header } from '@/components'
+import { Background, Header, Image } from '@/components'
 
 const Home = () => {
   return (
     <>
       <Header />
+      <Image />
       <Background />
     </>
   )
