@@ -1,6 +1,11 @@
-import { Header } from '@/components'
+import { Background, Header } from '@/components'
 
 const Home = () => {
-  return <Header />
+  return (
+    <>
+      <Header />
+      <Background />
+    </>
+  )
 }
 export default Home

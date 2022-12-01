@@ -8,7 +8,7 @@ import Head from 'next/head'
 import GlobalStyle from '../styles/global'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  const [theme, setTheme] = useState<string>('light')
+  const [theme, setTheme] = useState<string>('dark')
   return (
     <>
       <Head>

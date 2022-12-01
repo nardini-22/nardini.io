@@ -21,4 +21,12 @@ export default createGlobalStyle`
     font-family: Poppins, sans-serif;
     margin: 0 24px;
   }
+
+  h1 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
 `

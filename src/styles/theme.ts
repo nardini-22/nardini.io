@@ -17,7 +17,7 @@ export const darkTheme = {
     text: '#ffffff',
     primary: '#BD93F9',
     highlight: '#E4289D',
-    header: 'rgba(0, 0, 0, 0.1)',
+    header: 'rgba(150, 150, 150, 0.2)',
     headerShadow: 'rgba(255, 255, 255, 0.1)'
   }
 }
