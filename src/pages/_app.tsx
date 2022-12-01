@@ -1,15 +1,17 @@
-import React from 'react'
 import { AppProps } from 'next/app'
+import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
+import Theme from '@/components/context/Theme'
+import { darkTheme, lightTheme } from '@/styles/theme'
 import Head from 'next/head'
+import GlobalStyle from '../styles/global'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  const [theme, setTheme] = useState<string>('light')
   return (
     <>
-    <Head>
+      <Head>
         <title>Nardini.io</title>
         {/* <link rel="shortcut icon" href="/img/icon-512.png" /> */}
         {/* <link rel="apple-touch-icon" href="/img/icon-512.png" /> */}
@@ -20,10 +22,14 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
         />
       </Head>
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
+      <Theme.Provider value={{ theme, setTheme }}>
+        <ThemeProvider
+          theme={theme === 'dark' ? darkTheme.theme : lightTheme.theme}
+        >
+          <Component {...pageProps} />
+          <GlobalStyle />
+        </ThemeProvider>
+      </Theme.Provider>
     </>
   )
 }

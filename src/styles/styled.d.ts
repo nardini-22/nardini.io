@@ -9,3 +9,12 @@ export type Theme = typeof theme
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
 }
+
+export interface ITheme {
+  theme: {
+    body: string
+    text: string
+    primary: string
+    highlight
+  }
+}

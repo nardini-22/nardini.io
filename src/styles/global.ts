@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { ITheme } from './styled'
 
 export default createGlobalStyle`
 @font-face {
@@ -16,8 +17,7 @@ export default createGlobalStyle`
   }
   
   body {
-    background: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
+    background: ${(props: ITheme) => props.theme.body};
     font-family: Poppins, sans-serif;
   }
 `
