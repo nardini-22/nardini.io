@@ -13,4 +13,9 @@ export const IconContainer = styled.div`
   color: ${(props: ITheme) => props.theme.text};
   gap: 2px;
   cursor: pointer;
+  p {
+    &:hover {
+      text-shadow: ${(props: ITheme) => props.theme.neon};
+    }
+  }
 `

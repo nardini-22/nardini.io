@@ -18,5 +18,6 @@ export interface ITheme {
     highlight: string
     header: string
     headerShadow: string
+    neon: string
   }
 }

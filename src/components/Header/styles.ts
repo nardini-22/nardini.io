@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 8px;
   margin-top: 12px;
   padding: 20px;
@@ -24,5 +24,8 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-  position: absolute;
+  cursor: pointer;
+  &:hover {
+    text-shadow: ${(props: ITheme) => props.theme.neon};
+  }
 `
