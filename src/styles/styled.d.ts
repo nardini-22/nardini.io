@@ -19,5 +19,6 @@ export interface ITheme {
     header: string
     headerShadow: string
     neon: string
+    subtitle: string
   }
 }

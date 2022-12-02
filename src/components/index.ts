@@ -1,5 +1,7 @@
 export * from './Background'
 export * from './Header'
+export * from './Home'
 export * from './Image'
 export * from './Menu'
+export * from './Title'
 export * from './ToggleTheme'
